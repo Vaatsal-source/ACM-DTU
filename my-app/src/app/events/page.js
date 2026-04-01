@@ -54,7 +54,7 @@ export default function EventsPage() {
   return (
     <div className="w-full bg-transparent text-slate-100">
       
-      {/* Archive Header */}
+      
       <header className="border-b-4 border-zinc-900 py-24 px-6">
         <div className="max-w-7xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-black mb-6 tracking-tighter bg-gradient-to-r from-white to-slate-500 bg-clip-text text-transparent italic tracking-tight">
@@ -65,7 +65,7 @@ export default function EventsPage() {
 
       <main className="max-w-7xl mx-auto py-16 px-6 space-y-24">
         
-        {/* SECTION: UPCOMING */}
+        
         <section>
           <div className="flex items-center gap-4 mb-12">
             <h2 className="text-3xl font-black uppercase tracking-tight">Upcoming Entries</h2>
@@ -78,7 +78,7 @@ export default function EventsPage() {
                 key={event.id} 
                 className="group relative flex flex-col border-2 border-blue-900/50 bg-[#0a0a0a] transition-all duration-300 hover:border-[#3182ce] shadow-[8px_8px_0px_0px_rgba(30,58,138,0.2)] hover:shadow-[12px_12px_0px_0px_rgba(49,130,206,0.3)]"
               >
-                {/* Frame */}
+                
                 <div className="relative h-72 w-full overflow-hidden border-b border-blue-900/50">
                   <Image
                     src={event.image}
@@ -111,7 +111,7 @@ export default function EventsPage() {
           </div>
         </section>
 
-        {/* SECTION: PAST ARCHIVE */}
+        
         <section>
           <div className="flex items-center gap-4 mb-12">
             <h2 className="text-3xl font-black uppercase tracking-tight text-zinc-500">Past Archive</h2>
@@ -124,7 +124,7 @@ export default function EventsPage() {
                 key={event.id} 
                 className="group relative flex flex-col border border-zinc-800 bg-[#0a0a0a] transition-all duration-300 hover:border-zinc-500 shadow-[6px_6px_0px_0px_rgba(24,24,27,1)] hover:shadow-[10px_10px_0px_0px_rgba(49,130,206,0.2)]"
               >
-                {/* Frame */}
+                
                 <div className="relative h-48 w-full overflow-hidden border-b border-zinc-800">
                   <Image
                     src={event.image}
