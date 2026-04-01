@@ -15,7 +15,7 @@ export default function HomePage() {
 
   useEffect(() => {
     const handleScroll = () => {
-      // Shrink after 50px of scrolling
+      
       setIsScrolled(window.scrollY > 50);
       setShowScrollTop(window.scrollY > 300);
     };
@@ -34,7 +34,7 @@ export default function HomePage() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  // --- DATA FROM YOUR WORKSHOP PAGE ---
+ 
   const workshopCards = [
     {
       id: 1,
@@ -93,7 +93,7 @@ export default function HomePage() {
       className="min-h-screen text-slate-100 selection:bg-[#3182ce]/30"
       style={{ background: "#05080f" }}
     >
-      {/* PERSISTENT BACKGROUND */}
+      
       <div
         className="fixed inset-0 pointer-events-none z-0"
         style={{
@@ -101,17 +101,17 @@ export default function HomePage() {
         }}
       />
 
-      {/* FLOATING NAVBAR (STAYING AS SPECIFIED BY SUPERIOR) */}
+      
       <div className="fixed top-8 left-0 right-0 z-50 px-6">
         <motion.div
-          layout // Adds smooth layout transitions
-          initial={{ maxWidth: "1152px" }} // Explicitly start at full width
+          layout 
+          initial={{ maxWidth: "1152px" }} 
           animate={{
             maxWidth: isScrolled ? "800px" : "1152px",
           }}
           transition={{
             duration: 0.4,
-            ease: [0.4, 0, 0.2, 1], // Custom cubic-bezier for a more "premium" feel
+            ease: [0.4, 0, 0.2, 1], 
           }}
           className="mx-auto rounded-full border border-white/10 bg-black/40 backdrop-blur-xl px-8 py-3 shadow-2xl"
         >
@@ -120,7 +120,7 @@ export default function HomePage() {
       </div>
 
       <main className="relative z-10">
-        {/* HERO SECTION */}
+        
         <section
           id="home"
           className="flex min-h-screen items-center justify-center px-6"
@@ -147,7 +147,7 @@ export default function HomePage() {
           </motion.div>
         </section>
 
-        {/* WORKSHOPS SECTION (ID matches Navbar) */}
+        
         <section id="workshops" className="py-32 px-6 border-t border-white/5">
           <div className="max-w-7xl mx-auto">
             <div className="flex flex-col items-center mb-16 gap-8 text-center">
@@ -204,18 +204,18 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* EVENTS SECTION (ID matches Navbar) */}
+        
         <section id="events">
           <Events />
         </section>
 
-        {/* CONTACT SECTION (ID matches Navbar) */}
+        
         <section id="contact" className="pt-20">
           <ContactUs />
         </section>
       </main>
 
-      {/* SCROLL TO TOP */}
+      
       <AnimatePresence>
         {showScrollTop && (
           <motion.button
