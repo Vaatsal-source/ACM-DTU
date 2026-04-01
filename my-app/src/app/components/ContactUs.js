@@ -91,7 +91,7 @@ export default function ContactUs() {
           </div>
         </div>
  
-        {/* Bottom bar */}
+        
         <div className="mt-10 border-t border-white/15 pt-5 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-xs text-white/40">© 2026 AIMS DTU. All rights reserved.</p>
           <div className="flex gap-6 text-xs text-white/40">
