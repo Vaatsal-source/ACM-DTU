@@ -3,7 +3,7 @@ import React from 'react';
 export default function Navbar() {
   return (
     <nav className="flex items-center justify-between w-full">
-      {/* LEFT: Logo Section - Keeping names/structure identical */}
+    
       <div className="flex items-center gap-3">
         <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-lg font-semibold text-white border border-white/20">
           A
@@ -14,14 +14,14 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* CENTER: Desktop Links - Centered layout */}
+      
       <div className="hidden items-center gap-10 md:flex">
         <a href="#home" className="transition hover:text-white text-[11px] font-bold uppercase tracking-[0.2em] text-slate-400">Home</a>
         <a href="#workshops" className="transition hover:text-white text-[11px] font-bold uppercase tracking-[0.2em] text-slate-400">Workshop</a>
         <a href="#events" className="transition hover:text-white text-[11px] font-bold uppercase tracking-[0.2em] text-slate-400">Events</a>
       </div>
 
-      {/* RIGHT: Contact Button - Styled as a pill button like the image */}
+      
       <div className="flex items-center">
         <a 
           href="#contact" 
